@@ -1,0 +1,10 @@
+{
+    "bg-header": "http://netgon.net/artstyles/v-card3/assets/img/image_header.jpg",
+    "avatar":"https://scontent.fdad3-1.fna.fbcdn.net/v/t1.6435-9/156613392_2851199641762550_2995169247629295794_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=2KNF1c4pEvoAX_lLDsa&_nc_ht=scontent.fdad3-1.fna&oh=f498d7c518ee632ce34a976c0f15c477&oe=608B1668",
+    "fullName": "Quoc Thang Ly",
+    "job": "Deverloper FRONT-END",
+    "social":{
+        "facebook": "https://www.facebook.com/qthangg",
+        "instagram": "https://www.instagram.com/thangly98"
+    }
+}
