@@ -30,9 +30,7 @@ class App extends Component {
             },
         })
             .then(function (response) {
-                this.setState({ resumeData: response })
-                console.log(response)
-                return response.json()
+                this.setState({ resumeData: response.json() })
             })
             .then(function (myJson) {
                 console.log(myJson)
