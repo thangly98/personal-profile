@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import ReactGA from 'react-ga'
 import $ from 'jquery'
 import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import About from './components/About'
-import Resume from './components/Resume'
-import Contact from './components/Contact'
-import Testimonials from './components/Testimonials'
-import Portfolio from './components/Portfolio'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
+import About from './Components/About'
+import Resume from './Components/Resume'
+import Contact from './Components/Contact'
+import Testimonials from './Components/Testimonials'
+import Portfolio from './Components/Portfolio'
 
 class App extends Component {
     constructor(props) {
@@ -23,18 +23,32 @@ class App extends Component {
     }
 
     getResumeData() {
-        $.ajax({
-            url: '/resumeData.json',
-            dataType: 'json',
-            cache: false,
-            success: function (data) {
-                this.setState({ resumeData: data })
-            }.bind(this),
-            error: function (xhr, status, err) {
-                console.log(err)
-                alert(err)
+        fetch('resumeData.json', {
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json',
             },
         })
+            .then(function (response) {
+                this.setState({ resumeData: response })
+                console.log(response)
+                return response.json()
+            })
+            .then(function (myJson) {
+                console.log(myJson)
+            })
+        // $.ajax({
+        //   url:'/resumeData.json',
+        //   dataType:'json',
+        //   cache: false,
+        //   success: function(data){
+        //     this.setState({resumeData: data});
+        //   }.bind(this),
+        //   error: function(xhr, status, err){
+        //     console.log(err);
+        //     alert(err);
+        //   }
+        // });
     }
 
     componentDidMount() {
