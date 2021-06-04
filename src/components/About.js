@@ -12,7 +12,7 @@ class About extends Component {
             var zip = this.props.data.address.zip
             var phone = this.props.data.phone
             var email = this.props.data.email
-            // var resumeDownload = this.props.data.resumedownload
+            var resumeDownload = process.env.PUBLIC_URL + '/' + this.props.data.resumedownload
         }
 
         return (
@@ -44,9 +44,9 @@ class About extends Component {
                             </div>
                             <div className='columns download'>
                                 <p>
-                                    {/* <a href={resumeDownload} className='button'>
+                                    <a href={resumeDownload} download className='button'>
                                         <i className='fa fa-download'></i>Download Resume
-                                    </a> */}
+                                    </a>
                                 </p>
                             </div>
                         </div>
