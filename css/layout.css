@@ -492,6 +492,7 @@ ul#nav li.current a {
 .portfolio-item .item-wrap a {
     display: block;
     cursor: pointer;
+    pointer-events: auto;
     position: absolute;
     top: 0;
     left: 0;
