@@ -167,8 +167,6 @@ ul#nav {
 
     /* center align the menu */
     text-align: center;
-
-    background-color: rgba(0, 0, 0, 0.486);
 }
 ul#nav li {
     position: relative;
@@ -485,9 +483,19 @@ ul#nav li.current a {
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+.portfolio-item .item-wrap::before {
+    display: block;
+    content: '';
+    padding-bottom: 100%;
+}
 .portfolio-item .item-wrap a {
     display: block;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* overlay */
@@ -535,6 +543,9 @@ ul#nav li.current a {
 }
 .portfolio-item .item-wrap img {
     vertical-align: bottom;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .portfolio-item .portfolio-item-meta {
     padding: 18px;
