@@ -4,12 +4,12 @@ class Portfolio extends Component {
     render() {
         if (this.props.data) {
             var projects = this.props.data.projects.map(function (projects) {
-                var projectImage = '/images/portfolio/' + projects.image
+                var projectImage = process.env.PUBLIC_URL + '/images/portfolio/' + projects.image
                 return (
                     <div key={projects.title} className='columns portfolio-item'>
                         <div className='item-wrap'>
-                            <a target='_blank' href={projects.url} title={projects.title}>
-                                <img alt={projects.title} src={process.env.PUBLIC_URL + projectImage} />
+                            <a href={projects.url} title={projects.title} target='_blank' rel='noreferrer'>
+                                <img alt={projects.title} src={projectImage} />
                                 <div className='overlay'>
                                     <div className='portfolio-item-meta'>
                                         <h5>{projects.title}</h5>

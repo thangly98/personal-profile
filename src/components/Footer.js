@@ -6,7 +6,7 @@ class Footer extends Component {
             var networks = this.props.data.social.map(function (network) {
                 return (
                     <li key={network.name}>
-                        <a href={network.url}>
+                        <a href={network.url} target='_blank' rel='noreferrer'>
                             <i className={network.className}></i>
                         </a>
                     </li>
@@ -24,7 +24,7 @@ class Footer extends Component {
                             <li>&copy; Copyright 2021 Thang Ly</li>
                             <li>
                                 Design by{' '}
-                                <a title='Styleshout' href='http://www.styleshout.com/' target='_blank'>
+                                <a title='Styleshout' href='http://www.styleshout.com/' target='_blank' rel='noreferrer'>
                                     Styleshout
                                 </a>
                             </li>
