@@ -961,7 +961,7 @@ call-to-action .button {
     padding: 18px 20px;
     color: #eee;
     background: #373233;
-    margin-bottom: 42px;
+    margin-bottom: 10px;
     border: 0;
     outline: none;
     font-size: 15px;
@@ -973,6 +973,18 @@ call-to-action .button {
 #contact select:focus {
     color: #fff;
     background-color: #11abb0;
+}
+#contact #contactSubject {
+    margin-bottom: 32px;
+}
+#contact .message-validate {
+    display: block;
+    color: rgb(182, 60, 60);
+    font-style: italic;
+    line-height: 22px;
+    width: 65%;
+    margin-left: 26%;
+    margin-bottom: 32px;
 }
 #contact button.submit {
     text-transform: uppercase;
@@ -996,7 +1008,6 @@ call-to-action .button {
 }
 #message-warning,
 #message-success {
-    display: none;
     background: #0f0f0f;
     padding: 24px 24px;
     margin-bottom: 36px;
@@ -1015,7 +1026,6 @@ call-to-action .button {
     margin-right: 10px;
 }
 #image-loader {
-    display: none;
     position: relative;
     left: 18px;
     top: 17px;
