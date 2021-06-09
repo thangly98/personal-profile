@@ -1009,7 +1009,7 @@ call-to-action .button {
 #message-warning,
 #message-success {
     position: fixed;
-    top: 50px;
+    top: 80px;
     right: 20px;
     z-index: 1;
     background: #0f0f0f;
