@@ -1008,17 +1008,23 @@ call-to-action .button {
 }
 #message-warning,
 #message-success {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    z-index: 1;
     background: #0f0f0f;
     padding: 24px 24px;
     margin-bottom: 36px;
-    width: 65%;
-    margin-left: 26%;
+    min-width: 400px;
+    max-width: calc(100% - 40px);
 }
 #message-warning {
-    color: #d72828;
+    color: rgb(215, 40, 40);
+    box-shadow: -4px 6px 4px rgba(215, 40, 40, 0.212);
 }
 #message-success {
-    color: #11abb0;
+    color: rgb(17, 171, 176);
+    box-shadow: -4px 6px 4px rgba(17, 171, 176, 0.212);
 }
 
 #message-warning i,
