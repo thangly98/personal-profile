@@ -39,12 +39,19 @@ const Contact = (props) => {
                 message.forEach((text) => (body['message'] += '<p>' + text + '</p>'))
                 body['message'] += '</div>'
 
-                emailjs.send('personal_profile', 'template_sx8evrk', body, 'user_Z50I7Qo8PuDWe07nnWZZp').then(
-                    (result) => {
-                        if (result.text === 'OK') showResponse('success')
-                    },
-                    (error) => showResponse('fail')
-                )
+                emailjs
+                    .send(
+                        process.env.REACT_APP_EMAILJS_SERVICE,
+                        process.env.REACT_APP_EMAILJS_TEMPLATE,
+                        body,
+                        process.env.REACT_APP_EMAILJS_USER
+                    )
+                    .then(
+                        (result) => {
+                            if (result.text === 'OK') showResponse('success')
+                        },
+                        (error) => showResponse('fail')
+                    )
             } else setLoading(false)
         } catch (error) {
             showResponse('fail')
