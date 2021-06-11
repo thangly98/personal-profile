@@ -38,7 +38,7 @@
     "skillmessage": "Here are some of my skills",
     "education": [
       {
-        "school": "College?",
+        "school": "College of Information Technology - The University of Danang",
         "degree": "Bachelor of Information Technology",
         "graduated": "April 2019",
         "description": "Actively participate in school and class activities. graduated with good grades with a score of 2.59/4.0 ."
@@ -88,6 +88,12 @@
         "category": "Company introduction website",
         "image": "minori.com.vn_.png",
         "url": "https://minori.com.vn/"
+      },
+      {
+        "title": "Archisketch",
+        "category": "The company introduces an online interior design platform on the Cloud. Supply furniture from affiliated brands.",
+        "image": "www.archisketch.com_.png",
+        "url": "https://archisketch.com/"
       }
     ]
   },
